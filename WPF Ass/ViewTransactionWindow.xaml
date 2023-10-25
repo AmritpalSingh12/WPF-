@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_Ass.ViewTransactionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Ass"
+        mc:Ignorable="d"
+        Title="ViewTransactionWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgTransaction" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="66,68,82,68" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header=" Date" Binding="{Binding DateAdded }" />
+                <DataGridTextColumn Header=" Type" Binding="{Binding TypeOfTransaction }" />
+                <DataGridTextColumn Header=" ID" Binding="{Binding ItemID }" />
+                <DataGridTextColumn Header=" Name" Binding="{Binding ItemName }" />
+                <DataGridTextColumn Header=" Quantity" Binding="{Binding Quantity }" />
+                <DataGridTextColumn Header=" Employee" Binding="{Binding EmployeeName }" />
+                <DataGridTextColumn Header=" Price" Binding="{Binding ItemPrice }" />
+                
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+
+    </Grid>
+</Window>

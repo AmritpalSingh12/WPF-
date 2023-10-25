@@ -1,0 +1,23 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Button x:Name="btn_Additem" Content="Add Item to Stock" HorizontalAlignment="Left" Margin="93,67,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="AddItem_click"/>
+        <Label x:Name="lblTitle" Content="Stationary System " HorizontalAlignment="Left" Margin="309,22,0,0" VerticalAlignment="Top" Width="202" FontWeight="Bold" FontFamily="Monotxt"/>
+        <Button x:Name="btn_ViewItem" Content="View Item" HorizontalAlignment="Left" Margin="93,103,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="ViewItem_click"/>
+        <Button x:Name="btn_AddQuantity" Content="Add Quantity" HorizontalAlignment="Left" Margin="93,138,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="AddQuantity_click"/>
+        <Button x:Name="btn_RemoveQuantity" Content="Remove Quantity" HorizontalAlignment="Left" Margin="93,175,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="RemoveQuantity_click"/>
+        <Button x:Name="btn_Finance" Content="View Finance Report" HorizontalAlignment="Left" Margin="93,217,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="viewFinance_click"/>
+        <Button x:Name="btn_Transaction" Content="View Transaction Report" HorizontalAlignment="Left" Margin="93,254,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="viewTransaction_click"/>
+        <Button x:Name="btn_Personal" Content="View Personal Usage Report" HorizontalAlignment="Left" Margin="93,288,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="viewPersonal_click"/>
+        <Button x:Name="btn_RapidRequest" Content="Rapid Request" HorizontalAlignment="Left" Margin="93,323,0,0" VerticalAlignment="Top" Width="212" FontWeight="Bold" Background="#FFDEBCBC" FontFamily="Monotxt" Click="click_rapid"/>
+        <TextBox x:Name="txt_Rapidrequest" HorizontalAlignment="Left" Margin="463,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Height="125"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPF_Ass.AddItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Ass"
+        mc:Ignorable="d"
+        Title="AddItem" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="371*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_Submit" Content="Add Item" HorizontalAlignment="Left" Margin="46,263,0,0" VerticalAlignment="Top" Click="btn_Submit_Click" RenderTransformOrigin="2.83,3.69" Grid.Column="1" Height="48" Width="123"/>
+        <TextBox x:Name="txtItemName" HorizontalAlignment="Left" Margin="147,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtItemName_TextChanged" Grid.Column="1"/>
+        <Label x:Name="lblItemName" Content="Item Name" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,0.072" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="lbl_ItemQuantity" Content="Item Quantity" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
+        <TextBox x:Name="txtItemQuantity" HorizontalAlignment="Left" Margin="147,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtItemName_TextChanged" Grid.Column="1"/>
+        <Label x:Name="lbl_ItemId" Content="Item ID" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
+        <TextBox x:Name="txtItemId" HorizontalAlignment="Left" Margin="147,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtItemName_TextChanged" Grid.Column="1"/>
+        <Label x:Name="lbl_Price" Content="Item Price" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
+        <TextBox x:Name="txtItemPrice" HorizontalAlignment="Left" Margin="147,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtItemName_TextChanged" Grid.Column="1"/>
+        <Label x:Name="lblEmployeename" Content="Employee Name" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.Column="1"/>
+        <TextBox x:Name="txtEmployeeName" HorizontalAlignment="Left" Margin="147,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtItemName_TextChanged" Grid.Column="1"/>
+        <Label x:Name="lblAddItem" Grid.Column="1" Content="Add Item to Stock" HorizontalAlignment="Left" Margin="226,26,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblMSGItemName" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="304,97,0,0" VerticalAlignment="Top" Width="130" Foreground="#FFEF0B0B" FontWeight="Bold" Height="26"/>
+        <Label x:Name="lblMSGQuantity" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="295,135,0,0" VerticalAlignment="Top" Width="139" Foreground="#FFEF0B0B" FontWeight="Bold"/>
+        <Label x:Name="lblMSGPrice" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="295,174,0,0" VerticalAlignment="Top" Width="139" Foreground="#FFEF0B0B" FontWeight="Bold" Height="27"/>
+        <Label x:Name="lblMSGItemID" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="295,217,0,0" VerticalAlignment="Top" Width="139" Foreground="#FFEF0B0B" FontWeight="Bold" Height="22"/>
+        <Label x:Name="lblMSGEmployee" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="295,57,0,0" VerticalAlignment="Top" Width="139" Foreground="#FFEF0B0B" FontWeight="Bold" Height="26"/>
+        <Label x:Name="lblMSG" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="194,361,0,0" VerticalAlignment="Top" Width="137" Foreground="#FFF50B0B" FontWeight="Bold"/>
+        
+        <Button x:Name="btDeleteItem" Grid.Column="1" Content="Delete Item " HorizontalAlignment="Left" Margin="174,263,0,0" VerticalAlignment="Top" Height="48" Width="126" Click="DeleteID_Click"/>
+        <DataGrid x:Name="dgItems" Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="331,307,31,21">
+            <DataGrid.Columns >
+                
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+
+    </Grid>
+</Window>
